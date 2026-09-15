@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Practice 2</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+</head>
+<body>
+    <h1>About Me</h1>
+    <div class="div1"></div>
+    <script type="py" src="main.py"></script>
+
+    <form>
+        <label>Enter 1st Number:</label><br>
+        <input type="number" id="num1" placeholder="First Number"><br>
+
+        <label>Enter 2nd Number:</label><br>
+        <input type="number" id="num2" placeholder="Second Number"><br>
+
+        <button type="button" py-click="adding_numbers">+</button>
+        <button type="button" py-click="subtracting_numbers">-</button>
+        <button type="button" py-click="multiplying_numbers">x</button>
+        <button type="button" py-click="dividing_numbers">÷</button>
+
+        <div id="output1"></div>
+    </form>
+    
+</body>
+</html>
