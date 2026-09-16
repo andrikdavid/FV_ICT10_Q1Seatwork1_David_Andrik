@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://cdn.wallpapersafari.com/12/27/1lOMPt.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.about-card,
+.calc-card {
+    background-color: #00000073;
+    backdrop-filter: blur(3px);
+    border-radius: 30px;
+    padding: 30px;
+    min-width: 450px;
+    text-align: center;
+    box-shadow: -2px -1px 13px 0px rgba(255, 255, 255, 0.356);
+    transition: transform 0.3s ease;
+}
+
+.about-card:hover,
+.calc-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-card h1,
+.calc-card h1 {
+    color: white;
+    font-weight: 800;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.76);
+    margin-bottom: 15px;
+}
+
+#about-output {
+    color: white;
+    text-align: left;
+}
+
+#output1 {
+    background-color: #ffffff;
+    color: black;
+    font-size: 2rem;
+    padding: 5px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    min-width: 100px;
+    text-align: center;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.76);
+}
+
+label {
+    color: white;
+    padding-top: 5px;
+}
+
+button {
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+input {
+    text-align: center;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+}

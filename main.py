@@ -22,15 +22,15 @@ days_of_week = ('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'
 
 
 # Displaying the Information using display()
-display(f'Name: {name}')
-display(f'Age: {age}')
-display(f'Height: {height1} cm')
-display(f'Dream Countries: {country1}, {country2}, {country3}')
-display(f'New Student: {student_type}')
-display(f'Favorite Color: {additional_info["color"]}')
-display(f'Favorite Car Brand: {additional_info["car_brand"]}')
-display(f'Shoe Size: US {additional_info["shoe_size"]}')
-display(f'Best Friends: {additional_info["best_friend"]}')
+display(f'Name: {name}', target="about-output")
+display(f'Age: {age}', target="about-output")
+display(f'Height: {height1} cm', target="about-output")
+display(f'Dream Countries: {country1}, {country2}, {country3}', target="about-output")
+display(f'New Student: {student_type}', target="about-output")
+display(f'Favorite Color: {additional_info["color"]}', target="about-output")
+display(f'Favorite Car Brand: {additional_info["car_brand"]}', target="about-output")
+display(f'Shoe Size: US {additional_info["shoe_size"]}', target="about-output")
+display(f'Best Friends: {additional_info["best_friend"]}', target="about-output")
 
 
 # Operators for Calculator
