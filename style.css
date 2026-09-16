@@ -29,6 +29,8 @@ body {
     transition: transform 0.3s ease;
 }
 
+/* w3schools Transform Tool: 
+https://www.w3schools.com/cssref/css3_pr_transform.php */
 .about-card:hover,
 .calc-card:hover {
     transform: translateY(-5px);
@@ -57,7 +59,9 @@ body {
     margin-top: 20px;
     min-width: 100px;
     text-align: center;
-    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.76);
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.76); 
+    /* Box Shadow Generator: 
+    https://html-css-js.com/css/generator/box-shadow/ */
 }
 
 label {
