@@ -4,9 +4,9 @@ name = 'Carlos David' # string
 age = 14 # integer
 height1 = 171 # integer
 dream_countries = ['USA', 'United Kingdom', 'Italy'] # list
-country1 = dream_countries[0]
-country2 = dream_countries[1]
-country3 = dream_countries[2]
+country1 = dream_countries[0] # indexing of 1st item in list
+country2 = dream_countries[1] # indexing of 2nd item in list
+country3 = dream_countries[2] # indexing of 3rd item in list
 
 student_type = False # boolean
 
@@ -21,17 +21,19 @@ fruits = {'grapes', 'strawberry', 'mango', 'kiwi', 'watermelon'} # set
 days_of_week = ('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday') # tuple
 
 
-
+# Displaying the Information using display()
 display(f'Name: {name}')
 display(f'Age: {age}')
-display(f'Height: {height1}cm')
+display(f'Height: {height1} cm')
 display(f'Dream Countries: {country1}, {country2}, {country3}')
 display(f'New Student: {student_type}')
-display(f'Favorite Color: {additional_info['color']}')
-display(f'Favorite Car Brand: {additional_info['car_brand']}')
-display(f'Shoe Size: US {additional_info['shoe_size']}')
-display(f'Best Friends: {additional_info['best_friend']}')
+display(f'Favorite Color: {additional_info["color"]}')
+display(f'Favorite Car Brand: {additional_info["car_brand"]}')
+display(f'Shoe Size: US {additional_info["shoe_size"]}')
+display(f'Best Friends: {additional_info["best_friend"]}')
 
+
+# Operators for Calculator
 
 def adding_numbers(e):
     document.getElementById("output1").innerHTML = ""
@@ -39,8 +41,9 @@ def adding_numbers(e):
     num1 = float(document.getElementById("num1").value)
     num2 = float(document.getElementById("num2").value)
 
+    # Gets sum when num1 is added with num2
     result = num1 + num2
-    display(result, target="output1")
+    display(f'Result: {result}', target="output1")
 
 
 def subtracting_numbers(e):
@@ -49,8 +52,9 @@ def subtracting_numbers(e):
     num1 = float(document.getElementById("num1").value)
     num2 = float(document.getElementById("num2").value)
 
+    # Gets difference when num1 is subtracted by num2
     result = num1 - num2
-    display(result, target="output1")
+    display(f'Result: {result}', target="output1")
 
 
 def multiplying_numbers(e):
@@ -59,8 +63,9 @@ def multiplying_numbers(e):
     num1 = float(document.getElementById("num1").value)
     num2 = float(document.getElementById("num2").value)
 
+    # Gets product when num1 is multiplied by num2
     result = num1 * num2
-    display(result, target="output1")
+    display(f'Result: {result}', target="output1")
 
 
 def dividing_numbers(e):
@@ -69,6 +74,17 @@ def dividing_numbers(e):
     num1 = float(document.getElementById("num1").value)
     num2 = float(document.getElementById("num2").value)
 
-    result = num1 // num2
-    display(result, target="output1")
+    # Gets quotient when num1 is divided by num2
+    result = num1 / num2
+    display(f'Result: {result}', target="output1")
 
+
+def modulo_numbers(e):
+    document.getElementById("output1").innerHTML = ""
+
+    num1 = float(document.getElementById("num1").value)
+    num2 = float(document.getElementById("num2").value)
+
+    # Gets remainder when num1 is divided by num2
+    result = num1 % num2
+    display(f"Result: {result}", target="output1")
